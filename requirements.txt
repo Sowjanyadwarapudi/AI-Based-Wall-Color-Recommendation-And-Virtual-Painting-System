@@ -1,0 +1,16 @@
+streamlit
+numpy
+opencv-python-headless
+Pillow
+torch
+torchvision
+transformers
+huggingface-hub
+accelerate
+scipy
+requests
+tqdm
+safetensors
+
+
+
