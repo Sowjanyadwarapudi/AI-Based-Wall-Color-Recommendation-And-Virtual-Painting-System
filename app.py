@@ -796,6 +796,7 @@ def show_application():
 
 
     image_array = np.array(image)
+    st.success("✅ Step 1: Image uploaded successfully.")
 
 
     # ========================================================
@@ -839,6 +840,7 @@ def show_application():
             analysis = analyze_room_image(
                 image_array
             )
+            st.success("✅ Step 2: Room analysis completed.")
 
         except Exception as error:
 
@@ -891,6 +893,7 @@ def show_application():
             wall_mask = segmentation.segment_wall(
                 image
             )
+            st.success("✅ Step 2: Room analysis completed.")
 
         except Exception as error:
 
@@ -983,6 +986,7 @@ def show_application():
                 room_type,
                 intensity
             )
+            st.success("✅ Step 4: Color recommendation completed.")
 
         except Exception as error:
 
@@ -1205,6 +1209,7 @@ def show_application():
                     selected_color_rgb,
                     strength=0.70
                 )
+                st.success("✅ Step 5: Virtual painting completed.")
 
             except Exception as error:
 
